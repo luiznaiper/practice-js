@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures</title>
+</head>
+<body>
+    <header>
+        <h1>Geometric figures</h1>
+        <p>Practicing and getting fun</p>
+    </header>
+    <section>
+        <h2>Write how long each side of your square is</h2>
+        <form action="">
+            <label for="inputSquareSides">Square sides:</label>
+            <input id="inputSquareSides" type="number">
+           
+            <button type="button" onclick="calcPerimeterSquare()">Perimeter calculator</button>
+            <button type="button" onclick="calcAreaSquare()">Area calculator</button>
+        </form>
+        <p id="perimeterSquareP"></p>  
+        <p id="areaSquareP"></p>              
+    </section>
+    <section>
+        <h2>Write the 2 sides of the triangle and the base</h2>
+        <p>If the 2 sides are not equal, you will get an error</p>
+        <form action="">
+            <label for="inputSide1Triangle">Side 1</label>
+            <input id="inputSide1Triangle" type="number">
+
+            <label for="inputSide2Triangle">Side 2</label>
+            <input id="inputSide2Triangle" type="number">
+
+            <label for="inputBaseTriangle">Base</label>
+            <input id="inputBaseTriangle" type="number">
+           
+            <button type="button" onclick="calcPerimeterTriangle()">Perimeter triangle</button>
+            <button type="button" onclick="calcHeightTriangle()">Height calculator</button>
+            <button type="button" onclick="calcAreaTriangle()">Area calculator</button>
+
+
+        </form>
+        <p id="perimeterTriangleP"></p>  
+        <p id="heightTriangleP"></p>              
+        <p id="areaTriangleP"></p>              
+            
+    </section>
+    <script src="figures.js"></script>
+</body>
+</html>
