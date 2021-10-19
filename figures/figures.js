@@ -15,17 +15,6 @@ const areaTriangle = (base, height) => (base * height) / 2
 perimeterTriangle()
 areaTriangle()
 
-
-// Circle code
-
-
-//const radioCircle = 4
-const diameterCircle = (radio) => radio * 2
-const pi = Math.PI
-const circunference = (radio) => diameterCircle(radio) * pi
-const areaCircle = (radio) => (pi * radio) * 2
-
-
 // Isosceles code
 const isoscelesHeight= (side1, side2, base) => {
     if (side1 === side2 && side1 > base)
@@ -37,6 +26,12 @@ const isoscelesHeight= (side1, side2, base) => {
 }
 
 
+// Circle code
+
+const diameterCircle = (radio) => radio * 2
+const pi = Math.PI
+const circunference = (radio) => diameterCircle(radio) * pi
+const areaCircle = (radio) => pi * Math.pow(radio, 2)
 
 
 // HTML INTERACTION
@@ -86,8 +81,7 @@ function calcHeightTriangle(){
     document.getElementById('heightTriangleP').innerHTML = height
 }
 
-function calcAreaTriangle()
-{
+function calcAreaTriangle(){
     const input1 = document.getElementById('inputSide1Triangle')
     const value1 = Number(input1.value)
 
@@ -99,7 +93,30 @@ function calcAreaTriangle()
 
     const height = isoscelesHeight(value1, value2, value3)
     area = areaTriangle(value3, height)
-    console.log(area)
-    //document.getElementById('areaTriangleP').innerHTML = area
     document.getElementById('areaTriangleP').innerHTML = area
 }
+
+function calcDiameterCircle(){
+    const input1 = document.getElementById('inputRadio')
+    const value1 = Number(input1.value)
+
+    const diameter = diameterCircle(value1)
+    document.getElementById('diameterP').innerHTML = diameter
+}
+
+function calcCircunference(){
+    const input1 = document.getElementById('inputRadio')
+    const value1 = Number(input1.value)
+
+    const circunferenceArea = circunference(value1)
+    document.getElementById('circunferenceP').innerHTML = circunferenceArea
+}
+
+function calcCircleArea(){
+    const input1 = document.getElementById('inputRadio')
+    const value1 = Number(input1.value)
+
+    const circleArea = areaCircle(value1)
+    document.getElementById('areaCircleP').innerHTML = circleArea
+}
+
