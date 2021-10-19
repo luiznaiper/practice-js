@@ -1,6 +1,4 @@
 // Square code
-
-
 const perimeterSquare = (side) => side * 4
 const areaSquare = (side) => side * side
 perimeterSquare();
@@ -8,8 +6,6 @@ areaSquare();
 
 
 // Triangle code
-
-
 const perimeterTriangle = (side1, side2, base) => side1 + side2 + base
 const areaTriangle = (base, height) => (base * height) / 2
 perimeterTriangle()
@@ -25,9 +21,7 @@ const isoscelesHeight= (side1, side2, base) => {
     }
 }
 
-
 // Circle code
-
 const diameterCircle = (radio) => radio * 2
 const pi = Math.PI
 const circunference = (radio) => diameterCircle(radio) * pi
@@ -66,7 +60,6 @@ function calcPerimeterTriangle(){
     document.getElementById('perimeterTriangleP').innerHTML = perimeter
 }
 
-
 function calcHeightTriangle(){
     const input1 = document.getElementById('inputSide1Triangle')
     const value1 = Number(input1.value)
@@ -81,6 +74,7 @@ function calcHeightTriangle(){
     document.getElementById('heightTriangleP').innerHTML = height
 }
 
+//Circle
 function calcAreaTriangle(){
     const input1 = document.getElementById('inputSide1Triangle')
     const value1 = Number(input1.value)
