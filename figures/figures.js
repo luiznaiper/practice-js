@@ -35,14 +35,14 @@ function calcPerimeterSquare () {
     const input = document.getElementById('inputSquareSides')
     const value = input.value
     const perimeter = perimeterSquare(value)
-    document.getElementById('perimeterSquareP').innerHTML = perimeter
+    document.getElementById('perimeterSquareP').innerHTML = `The square perimeter is ${perimeter}cm`
 } 
 
 function calcAreaSquare () {
     const input = document.getElementById('inputSquareSides')
     const value = input.value
     const area = areaSquare(value)
-    document.getElementById('areaSquareP').innerHTML = area
+    document.getElementById('areaSquareP').innerHTML = `The square area is ${area}cm2`
 } 
 
 // Triangle
@@ -57,7 +57,7 @@ function calcPerimeterTriangle(){
     const value3 = Number(input3.value)
 
     const perimeter = perimeterTriangle(value1, value2, value3)
-    document.getElementById('perimeterTriangleP').innerHTML = perimeter
+    document.getElementById('perimeterTriangleP').innerHTML = `The triangle perimeter is ${perimeter}cm`
 }
 
 function calcHeightTriangle(){
@@ -71,7 +71,7 @@ function calcHeightTriangle(){
     const value3 = Number(input3.value)
 
     const height = isoscelesHeight(value1, value2, value3)
-    document.getElementById('heightTriangleP').innerHTML = height
+    document.getElementById('heightTriangleP').innerHTML = `The isosceles triangle height is ${height}cm`
 }
 
 //Circle
@@ -87,7 +87,7 @@ function calcAreaTriangle(){
 
     const height = isoscelesHeight(value1, value2, value3)
     area = areaTriangle(value3, height)
-    document.getElementById('areaTriangleP').innerHTML = area
+    document.getElementById('areaTriangleP').innerHTML = `The isosceles triangle area is ${area}cm2`
 }
 
 function calcDiameterCircle(){
@@ -95,7 +95,7 @@ function calcDiameterCircle(){
     const value1 = Number(input1.value)
 
     const diameter = diameterCircle(value1)
-    document.getElementById('diameterP').innerHTML = diameter
+    document.getElementById('diameterP').innerHTML = `The circle diameter is ${diameter}cm`
 }
 
 function calcCircunference(){
@@ -103,7 +103,7 @@ function calcCircunference(){
     const value1 = Number(input1.value)
 
     const circunferenceArea = circunference(value1)
-    document.getElementById('circunferenceP').innerHTML = circunferenceArea
+    document.getElementById('circunferenceP').innerHTML = `The circunference is ${circunferenceArea}cm`
 }
 
 function calcCircleArea(){
@@ -111,6 +111,6 @@ function calcCircleArea(){
     const value1 = Number(input1.value)
 
     const circleArea = areaCircle(value1)
-    document.getElementById('areaCircleP').innerHTML = circleArea
+    document.getElementById('areaCircleP').innerHTML = `The circle area is ${circleArea}cm2`
 }
 
