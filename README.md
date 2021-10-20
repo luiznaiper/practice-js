@@ -16,3 +16,8 @@ A new project to practice a little bit of algorythms
 - Integrate js with
 
 ## 3 Mean, median, and mode
+
+- Define formulas
+- Implement formulas in js
+- Create functions
+- Integrate js with
