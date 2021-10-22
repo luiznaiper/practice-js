@@ -21,3 +21,6 @@ A new project to practice a little bit of algorythms
 - Implement formulas in js
 - Create functions
 - Integrate js with
+
+Page:
+https://luiznaiper.github.io/practice-js/ 
