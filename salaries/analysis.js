@@ -12,7 +12,6 @@ const spliceStart = (sortedSalariesColombia.length * 90) /100
 const spliceCount = sortedSalariesColombia.length - spliceStart
 
 const salariesColTop10 = sortedSalariesColombia.splice(spliceStart, spliceCount)
-console.log(salariesColTop10)
 
 //mean
 let getAverage = (list) =>{
